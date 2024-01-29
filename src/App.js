@@ -19,8 +19,11 @@ function App({ id, title, price, description, category, image }) {
             </p> <br />
             <p className=" font-bold text-center">{category}</p>
 
-            <p className="italic text-blue-900 text-center">Price: {price}</p>
+            <p className="italic text-blue-900 text-center m-2">Price: {price}</p>
           </div>
+        </div>
+        <div>
+          <button className=" bg-black text-white p-2 rounded-lg block items-center m-auto">Buy now</button>
         </div>
 
       </div>

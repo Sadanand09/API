@@ -17,23 +17,13 @@ function Home() {
 
     return (
         <>
-            <div>
-                <p className="font-extrabold text-center text-5xl"></p>
-            </div>
+            <div className=" flex flex-wrap justify-around">
 
-            <div className='flex flex-wrap justify-center'>
                 {
                     items.map((items, index) => {
-                        return (
-                            <div>
-                                <div>
-                                    <App key={index} id={items.id} title={items.title} price={items.price}
-                                        description={items.description} category={items.category}
-                                        image={items.image} />
-                                </div>
-                            </div>
-
-                        )
+                        return (<App key={index} id={items.id} title={items.title} price={items.price}
+                            description={items.description.substring(0,115)} category={items.category}
+                            image={items.image} />)
                     })
                 }
             </div>

@@ -2,9 +2,7 @@ import React from "react";
 
 function App({ id, title, price, description, category, image }) {
   return (
-    <div className="m-5 h-96 w-96">
-
-      <div className=" card border-2 border-black my-3 p-2 hover:scale-90 duration-700">
+      <div className="w-1/4 border-2 shadow-lg border-black m-5 p-2 hover:scale-90 duration-700">
         <span className="text-black font-bold">
           {id}
         </span>
@@ -16,7 +14,7 @@ function App({ id, title, price, description, category, image }) {
 
             <p className="text-white">Item: {title}</p>
 
-            <p className=" text-justify truncate">
+            <p className=" text-justify ">
               {description}
             </p> <br />
             <p className=" font-bold text-center">{category}</p>
@@ -26,8 +24,6 @@ function App({ id, title, price, description, category, image }) {
         </div>
 
       </div>
-
-    </div >
   );
 }
 

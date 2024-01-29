@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+function App({ id, title, price, description, category, image }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="m-3">
+
+      <div className="cursor-pointer container border border-2 m-auto border-black my-3 p-2 hover:scale-90 duration-700">
+        <img src={image} className="h-48" />
+        <h1 className="text-black font-bold">
+          Item id:{id}
+        </h1>
+        <p className="text-white">Item: {title}</p>
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {description}
+          <br />
+          {category}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p className="italic text-blue-900">Price: {price}</p>
+
+      </div>
+
     </div>
   );
 }

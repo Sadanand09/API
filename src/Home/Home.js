@@ -21,14 +21,16 @@ function Home() {
                 <p className="font-extrabold text-center text-5xl"></p>
             </div>
 
-        <div>
+            <div className='flex flex-wrap justify-center'>
                 {
                     items.map((items, index) => {
                         return (
                             <div>
-                                <App key={index} id={items.id} title={items.title} price={items.price}
-                                description={items.description} category={items.category} 
-                                image={items.image} />
+                                <div>
+                                    <App key={index} id={items.id} title={items.title} price={items.price}
+                                        description={items.description} category={items.category}
+                                        image={items.image} />
+                                </div>
                             </div>
 
                         )
